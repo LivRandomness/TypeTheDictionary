@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Type the Dictionary</title>
+    <meta name="description" content="A simple typing website with various test lengths. How fast can you type the dictionary?">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="icon" href="eve.png">
+    <script src="https://kit.fontawesome.com/b0d607148b.js" crossorigin="anonymous"></script>
+</head>
+<body onload="onloadTransitions();">
+    <div id="selection-container">
+        <div id="title"><b>Select a mode...</b></div>
+        <div id="option-1" class="option">Top 200 Words
+            <div id="option-1-pb" class="option-pb"></div>
+        </div>
+        <div id="option-2" class="option">Top 1,000 Words
+            <div id="option-2-pb" class="option-pb"></div>
+        </div>
+        <div id="option-3" class="option">Top 10,000 Words
+            <div id="option-3-pb" class="option-pb"></div>
+        </div>
+        <div id="option-4" class="option">Type the Dictionary
+            <div id="option-4-pb" class="option-pb"></div>
+        </div>
+        <div id="option-5" class="option display-none">Continue</div>
+        <div id="tip">Tip: Press the pause button to take a break!</div>
+        <div id="warning">WARNING: This mode contains questionable words. Proceed at your own risk!</div>
+    </div>
+    <div id="results-container">
+        <div id="results">
+            <div id="results-title-container">
+                <div id="results-title"><b>Results:</b></div>
+                <i id="results-exit" class="fas fa-times"></i>
+            </div>
+            <div id="results-mode">Mode:</div>
+            <div id="results-time">Time Elapsed:</div>
+        </div>
+    </div>
+    <div id="typing-container">
+        <div id="top-strip">
+            <div id="remaining-words"></div>
+            <i id="pause-button" class="fas fa-pause"></i>
+            <div id="time-elapsed">
+                <div id="hr">00</div>
+                <div>:</div>
+                <div id="min">00</div>
+                <div>:</div>
+                <div id="sec">00</div>
+                <div>.</div>
+                <div id="ms">00</div>
+            </div>
+        </div>
+        <div id="content">
+                <div id="upcoming-word-3" class="uw-div"></div>
+                <div id="upcoming-word-2" class="uw-div"></div>
+                <div id="upcoming-word-1" class="uw-div"></div>
+                <div id="current-word"></div>
+        </div>
+    </div>
+    <div id="pause-container" class="no-pointer-events">
+        <div id="pause-menu">
+            <div id="pause-1"><b>Paused</b></div>
+            <div id="pause-2">Click anywhere on the screen to unpause. The timer will resume when you begin typing.</div>
+            <div id="pause-3">Alternatively, you can close the website and pick up from where you left off later by pressing <u>Continue</u> on the main menu.</div>
+        </div>
+    </div>
+</body>
+<script src="word-lists.js"></script>
+<script src="script.js"></script>
+</html>

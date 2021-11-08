@@ -1,0 +1,31 @@
+.scroll-down {
+    animation-name: scroll-down;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes scroll-down {
+    0% {
+        margin-bottom: 215px;
+    }
+    100% {
+        margin-bottom: 120px;
+    }
+}
+
+.upcoming-word {
+    animation-name: upcoming-word;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes upcoming-word {
+    0% {
+        opacity: 0%;
+        font-size: 35px;
+    }
+    100% {
+        opacity: 10%;
+        font-size: 45px;
+    }
+}
