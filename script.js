@@ -146,7 +146,6 @@ function selectOption4() {
     selectedWordList = Array.from(wordsDict);
     selectedMode = "Type the Dictionary";
     remainingWords = 451743;
-    remainingWords = 10;
     transitionToTest1();
 }
 
